@@ -9,7 +9,7 @@ description = "A way to show my personal ideas."
 default_language = "en"
 
 # The site theme to use.
-theme = "zola-paper"
+theme = "slim"
 
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
@@ -29,8 +29,19 @@ generate_feed = true
 #     ]
 #
 taxonomies = [
-    {name = "tags", feed = true, paginate_by = 5},
+    {name = "tags", paginate_by = 5, rss = true}
 ]
 
 [extra]
-# Put all your custom variables here
+# Show a summary of a post in a list
+slim_summary = true
+# Show the content of a post in a list
+slim_content = false
+# Links to show at the top of the menu
+slim_menu = [
+    {url = "$BASE_URL/tags", name = "Tags"}
+]
+# Links to show at the bottom of the menu
+slim_social = [
+    {url = "https://github.com/jordangong", name = "Github"}
+]
