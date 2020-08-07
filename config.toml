@@ -34,7 +34,7 @@ taxonomies = [
 
 [extra]
 # Show a summary of a post in a list
-slim_summary = true
+slim_summary = false
 # Show the content of a post in a list
 slim_content = false
 # Links to show at the top of the menu
@@ -43,5 +43,6 @@ slim_menu = [
 ]
 # Links to show at the bottom of the menu
 slim_social = [
-    {url = "https://github.com/jordangong", name = "Github"}
+    {url = "atom.xml", name = "Feed"},
+    {url = "https://github.com/jordangong", name = "Github"},
 ]
